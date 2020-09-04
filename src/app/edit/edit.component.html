@@ -1,0 +1,18 @@
+<p>edit works!</p>
+<div *ngFor ="let item of employee">
+    
+        {{item.isedit}} 
+        
+    <div class="form-group example-form" style="margin-top: 50px; padding-left: 50px;" >
+        <mat-form-field class="example-full-width">
+            <mat-label>Employee Name</mat-label>
+            <input matInput type="text" class="form-control" [(ngModel)]="item.editname"><br><br>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>  
+            <input matInput type="email" class="form-control" [(ngModel)]="item.editemail" ><br><br>
+        </mat-form-field>
+    <button mat-raised-button color="primary" (click)="UpdateRecord(item)" >Update Employee</button> 
+    </div>
+    
+</div>

@@ -1,0 +1,19 @@
+<div class="form-group example-form" style="margin-top: 50px; padding-left: 50px;">
+    <mat-form-field class="example-full-width">
+        <mat-label>Employee Name</mat-label>
+            <input matInput type="text" class="form-control" [(ngModel)]="employeeName" placeholder="Enter Employee Name"><br><br>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>  
+            <input matInput type="email" class="form-control" [(ngModel)]="email" placeholder="Enter Employee Email"><br><br>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="CreateRecord()" [disabled]="!employeeName || !email">Create Employee</button>
+</div>
+
+
+
+
+
+
+
+
